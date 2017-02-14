@@ -63,6 +63,21 @@
             $this->assertEquals($expected_result, $actual_result);
         }
 
+        function test_anagramFinder_word_oneCorrectPossibility()
+        {
+            // Arrange
+            $new_anagram = new Anagram;
+            $word = "cat";
+            $possible_list = array("tac");
+            $expected_result = array("tac");
+
+            // Act
+            $actual_result = $new_anagram->anagramFinder($word, $possible_list);
+
+            //Assert
+            $this->assertEquals($expected_result, $actual_result);
+        }
+
 
 
 
