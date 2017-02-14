@@ -56,7 +56,7 @@ This project demonstrates building an app using PHPUnit, Silex and Twig framewor
 | cat          | tac                        | tac                                 |
 | cat          | tac tic toe act            | tac act                             |
 
-* Note! Not in initial test cases: Capitalization, hyphenated words, punctuation, numbers, other characters
+* Note! Not in initial test cases: Capitalization, hyphenated words, punctuation, numbers, other characters, words that are white space.
 
 * Phase 4 - Initial Silex framework with "Hello" on home page
 * Phase 5 - Twig template with a a form that accepts a list of words and returns which words are anagrams.
