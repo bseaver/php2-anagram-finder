@@ -78,6 +78,21 @@
             $this->assertEquals($expected_result, $actual_result);
         }
 
+        function test_anagramFinder_word_multipleCorrectPossibility()
+        {
+            // Arrange
+            $new_anagram = new Anagram;
+            $word = "cat";
+            $possible_list = array("tac", "tic", "toe", "act");
+            $expected_result = array("tac", "act");
+
+            // Act
+            $actual_result = $new_anagram->anagramFinder($word, $possible_list);
+
+            //Assert
+            $this->assertEquals($expected_result, $actual_result);
+        }
+
 
 
 
