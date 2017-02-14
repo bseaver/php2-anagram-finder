@@ -3,7 +3,7 @@
 
     class AnagramTest extends PHPUnit_Framework_TestCase
     {
-        function test_anagramFinder_blanks()
+        function test_anagramFinder_blank_input()
         {
             // Arrange
             $new_anagram = new Anagram;
@@ -17,6 +17,25 @@
             //Assert
             $this->assertEquals($expected_result, $actual_result);
         }
+
+        function test_anagramFinder_blank_word()
+        {
+            // Arrange
+            $new_anagram = new Anagram;
+            $word = "";
+            $possible_list = array('tic', 'tac', 'toe');
+            $expected_result = array();
+
+            // Act
+            $actual_result = $new_anagram->anagramFinder($word, $possible_list);
+
+            //Assert
+            $this->assertEquals($expected_result, $actual_result);
+        }
+
+
+
+
     }
 
 ?>
