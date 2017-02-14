@@ -48,6 +48,23 @@
             $this->assertEquals($expected_result, $actual_result);
         }
 
+        function test_anagramFinder_word_sameAs_possibility()
+        {
+            // Arrange
+            $new_anagram = new Anagram;
+            $word = "cat";
+            $possible_list = array("cat");
+            $expected_result = array();
+
+            // Act
+            $actual_result = $new_anagram->anagramFinder($word, $possible_list);
+
+            //Assert
+            $this->assertEquals($expected_result, $actual_result);
+        }
+
+
+
 
 
 
