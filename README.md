@@ -49,11 +49,11 @@ This project demonstrates building an app using PHPUnit, Silex and Twig framewor
 
 | Word         | Possible List              | Actual List of Anagrams             |
 |--------------|----------------------------|-------------------------------------|
-| cat          | tac                        | tac                                 |
-| cat          | cat                        |                                     |
+|              |                            |                                     |
 |              | tic tac toe                |                                     |
 | cat          |                            |                                     |
-|              |                            |                                     |
+| cat          | cat                        |                                     |
+| cat          | tac                        | tac                                 |
 | cat          | tac tic toe act            | tac act                             |
 
 * Note! Not in initial test cases: Capitalization, hyphenated words, punctuation, numbers, other characters
