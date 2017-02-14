@@ -3,7 +3,7 @@
     {
         function anagramFinder ($word, $possible_anagrams)
         {
-            return array('dog');
+            return array();
         }
     }
 
