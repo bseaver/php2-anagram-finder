@@ -9,13 +9,13 @@
                 return $result;
             }
 
-            if (count($possible_anagrams) == 1) {
-                if ($word !== $possible_anagrams[0]) {
+            foreach ($possible_anagrams as $possible_anagram) {
+                if ($word !== $possible_anagram) {
                     $wordls = str_split($word);
-                    $possls = str_split($possible_anagrams[0]);
+                    $possls = str_split($possible_anagram);
                     $inter = array_intersect($wordls, $possls);
                     if ($inter === $wordls) {
-                        return $possible_anagrams;
+                        array_push($result, $possible_anagram);
                     }
                 }
             }
