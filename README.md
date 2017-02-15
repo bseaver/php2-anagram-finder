@@ -55,6 +55,7 @@ This project demonstrates building an app using PHPUnit, Silex and Twig framewor
 | cat          | cat                        |                                     |
 | cat          | tac                        | tac                                 |
 | cat          | tac tic toe act            | tac act                             |
+| aardvark     | dvraaark radvrarkk         | dvraaark                            |
 
 * Note! Not in initial test cases: Capitalization, hyphenated words, punctuation, numbers, other characters, words that are white space.
 
